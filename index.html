@@ -1,16 +1,106 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Uber Eats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet" />
     <link href="StyleSheet.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="uberLogo">
+                    </a>
+                    <form class="adressForm">
+                        <select>
+                            <option style="text-align:center;">
+                                ASAP
+                            </option>
+                            <option>
+                                In 1 hour
+                            </option>
+                        </select>
+                        <span>to</span>
+                        <div class="header-search">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" stroke="black" fill="transparent">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <input type="text" value="ul. Bolshaya Dmitrovka,22" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <input id="signIn" type="button" value="Sign In" />
+                    <input id="register" type="button" value="Register" />
+                    <a id="basket" href="#">
+                        <img src="img/basket.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="container">
+            <div class="row">
+                <div class="col mainSearch">
+                    <form>
+                        <img src="img/Shape.png" />
+                        <input type="text" value="Search for restaurant or cuisine" class="mainSearchInput" />
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col whenTo">
+                    When <span>To</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form class="adressForm">
+                        <select>
+                            <option style="text-align:center;">
+                                ASAP
+                            </option>
+                            <option>
+                                In 1 hour
+                            </option>
+                        </select>
+                        <div class="header-search">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" stroke="black" fill="transparent">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="20" height="20" fill="white" transform="translate(2 2)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <input type="text" value="ul. Bolshaya Dmitrovka,22" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Restaurants
+                </div>
+            </div>
             <div class="row">
                 <div class="col">
                     <a href="#" class="card">
@@ -59,8 +149,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
+
                 <div class="col">
                     <a href="#" class="card">
                         <div class="card-image">
@@ -115,8 +204,7 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="row">
+
                 <div class="col">
                     <a href="#" class="card">
                         <div class="card-image">
@@ -188,4 +276,5 @@
         </div>
     </footer>
 </body>
+
 </html>
