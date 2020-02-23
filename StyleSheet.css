@@ -301,7 +301,7 @@ main .row:nth-child(4) {
 .card-image {
     position: relative;
     height:195px;
-    overflow:hidden;
+    /*overflow:hidden;*/
 }
 
 .card-image-heart {
