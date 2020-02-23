@@ -5,6 +5,7 @@ imgs.forEach(function (img) {
 
 let title = document.querySelectorAll(".title");
 let typePrice = document.querySelectorAll(".item");
+let colBtn = document.querySelector(".col-btn");
 let showMoreBtn = document.querySelector(".showMore");
 let divRow = document.querySelector("main .row:last-child");
 let itemsArr;
@@ -31,7 +32,8 @@ fetch("https://ubereats-demo-api.herokuapp.com/v1/places?offset=1&limit=11")
 showMoreBtn.addEventListener("click", getNewContent);
 
 function getNewContent() {
-    
+    console.log(colBtn);
+    colBtn.remove();
     for (i = imgs.length; i < itemsArr.length; i++) {
         let col = `
                     <div class="col">
@@ -56,6 +58,6 @@ function getNewContent() {
         let divCol = document.createRange().createContextualFragment(col);
         divRow.append(divCol);
     }
-    showMoreBtn.style.display = "none";
+    
 }
 
