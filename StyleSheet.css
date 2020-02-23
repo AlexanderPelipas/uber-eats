@@ -300,6 +300,8 @@ main .row:nth-child(4) {
 
 .card-image {
     position: relative;
+    height:195px;
+    overflow:hidden;
 }
 
 .card-image-heart {
@@ -318,6 +320,7 @@ main .row:nth-child(4) {
     background: #734BDA;
     color: #FFFFFF;
     padding: 6px 21px 6px 10px;
+    z-index:20;
 }
 
 .card-image img {
