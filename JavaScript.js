@@ -1,4 +1,4 @@
-﻿let imgs = document.querySelectorAll(".card-image > img");
+/*﻿let imgs = document.querySelectorAll(".card-image > img");
 imgs.forEach(function (img) {
     img.src = "img/Spin.gif";
 })
@@ -63,4 +63,4 @@ function getNewContent() {
     }
     
 }
-
+*/
